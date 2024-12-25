@@ -212,34 +212,34 @@ int main()
 
 	cout << "\nExpected Occurrences: {" << ExpectedOccurrences << "}\n\n";
 
+	cout << "{" << Occurrences1 << "}" << " = " << "{" << ExpectedOccurrences << "}\n";
 	PrintCheckPatternResult(Occurrences1, ExpectedOccurrences);
 
+	cout << "\n{" << Occurrences2 << "}" << " > " << "{" << ExpectedOccurrences << "}\n";
 	PrintCheckPatternResult(Occurrences2, ExpectedOccurrences);
 
+	cout << "\n{" << Occurrences3 << "}" << " < " << "{" << ExpectedOccurrences << "}\n";
 	PrintCheckPatternResult(Occurrences3, ExpectedOccurrences);
 
-	cout << "\nChiSquar 1: {" << CalculateChiSquare(Occurrences1, ExpectedOccurrences) << "}\n";
 
-	cout << "ChiSquar 2: {" << CalculateChiSquare(Occurrences2, ExpectedOccurrences) << "}\n";
-
-	cout << "ChiSquar 3: {" << CalculateChiSquare(Occurrences3, ExpectedOccurrences) << "}\n\n";
-
+	cout << "\n\nChiSquar 1: {" << CalculateChiSquare(Occurrences1, ExpectedOccurrences) << "}\n";
 	PrintChiSquareTest(Occurrences1, ExpectedOccurrences);
 
+	cout << "\nChiSquar 2: {" << CalculateChiSquare(Occurrences2, ExpectedOccurrences) << "}\n";
 	PrintChiSquareTest(Occurrences2, ExpectedOccurrences);
 
+	cout << "\nChiSquar 3: {" << CalculateChiSquare(Occurrences3, ExpectedOccurrences) << "}\n";
 	PrintChiSquareTest(Occurrences3, ExpectedOccurrences);
 
-	cout << "\nP1-Value: {" << CalculatePValue(CalculateChiSquare(Occurrences1, ExpectedOccurrences)) << "}\n";
 
-	cout << "\nP2-Value: {" << CalculatePValue(CalculateChiSquare(Occurrences2, ExpectedOccurrences)) << "}\n";
 
-	cout << "\nP3-Value: {" << CalculatePValue(CalculateChiSquare(Occurrences3, ExpectedOccurrences)) << "}\n\n";
-
+	cout << "\n\nP1-Value: {" << CalculatePValue(CalculateChiSquare(Occurrences1, ExpectedOccurrences)) << "}\n";
 	PrintChiSquareTestAndPValueResult(Occurrences1, ExpectedOccurrences);
 
+	cout << "\nP2-Value: {" << CalculatePValue(CalculateChiSquare(Occurrences2, ExpectedOccurrences)) << "}\n";
 	PrintChiSquareTestAndPValueResult(Occurrences2, ExpectedOccurrences);
 
+	cout << "\nP3-Value: {" << CalculatePValue(CalculateChiSquare(Occurrences3, ExpectedOccurrences)) << "}\n";
 	PrintChiSquareTestAndPValueResult(Occurrences3, ExpectedOccurrences);
 
 	system("pause>0");
