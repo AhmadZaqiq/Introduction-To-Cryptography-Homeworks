@@ -152,7 +152,7 @@ void PrintChiSquareTest(double Occurrences, double ExpectedCount)
 
 double CalculatePValue(double ChiSquareValue, int DegreesOfFreedom = 1)
 {
-	return 1.0 - exp(-ChiSquareValue / 2.0);  //ليست دقيقة تماما لكن كافة للتوضيح
+	return 1.0 - (-ChiSquareValue / 2.0);  //ليست دقيقة تماما لكن كافية للتوضيح
 }
 
 bool IsRandomBasedOnChiSquareAndPValue(double Occurrences, double ExpectedCount)
